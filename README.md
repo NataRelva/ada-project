@@ -3,7 +3,7 @@
 ## Estrutura do Projeto
 
 ```plaintext
-src/
+packages/
 ├── contexts/
 │   ├── scraping/
 │   │   ├── domain/
