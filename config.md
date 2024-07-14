@@ -1,6 +1,7 @@
 Descrição dos Contextos Limitados (Bounded Contexts)
+
 1. Scraping Context
-Responsabilidade: Extrair dados das páginas web.
+   Responsabilidade: Extrair dados das páginas web.
 
 Componentes:
 
@@ -15,8 +16,7 @@ Interfaces:
 ScrapeController: Controlador para lidar com solicitações de scraping.
 ScraperGateway: Gateway para comunicação com o serviço de scraping.
 Infraestrutura:
-ScraperInfrastructure: Implementações de infraestrutura específicas para scraping.
-2. Event Management Context
+ScraperInfrastructure: Implementações de infraestrutura específicas para scraping. 2. Event Management Context
 Responsabilidade: Gerenciar e armazenar eventos.
 
 Componentes:
@@ -32,8 +32,7 @@ Interfaces:
 EventController: Controlador para lidar com eventos.
 EventGateway: Gateway para comunicação com o Event Store.
 Infraestrutura:
-EventInfrastructure: Implementações de infraestrutura específicas para gerenciamento de eventos.
-3. Data Processing Context
+EventInfrastructure: Implementações de infraestrutura específicas para gerenciamento de eventos. 3. Data Processing Context
 Responsabilidade: Processar e indexar dados extraídos.
 
 Componentes:
@@ -49,8 +48,7 @@ Interfaces:
 DataProcessingController: Controlador para lidar com o processamento de dados.
 DataProcessingGateway: Gateway para comunicação com o serviço de processamento de dados.
 Infraestrutura:
-DataProcessingInfrastructure: Implementações de infraestrutura específicas para processamento de dados.
-4. Query Context
+DataProcessingInfrastructure: Implementações de infraestrutura específicas para processamento de dados. 4. Query Context
 Responsabilidade: Consultar e recuperar dados.
 
 Componentes:

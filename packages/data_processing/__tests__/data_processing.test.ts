@@ -1,5 +1,5 @@
 describe('Data processing', () => {
-    it('should pass this test', () => {
-      expect(true).toBe(true);
-    });
+  it('should pass this test', () => {
+    expect(true).toBe(true);
   });
+});
