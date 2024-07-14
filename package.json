@@ -6,12 +6,23 @@
     "build": "turbo run build",
     "lint": "turbo run lint",
     "test": "turbo run test",
-    "deploy": "turbo run deploy"
+    "deploy": "turbo run deploy",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "turbo": "^1.0.0",
     "eslint": "^7.32.0",
     "@typescript-eslint/parser": "^4.0.0",
-    "@typescript-eslint/eslint-plugin": "^4.0.0"
+    "@typescript-eslint/eslint-plugin": "^4.0.0",
+    "husky": "^7.0.0",
+    "@commitlint/config-conventional": "^12.0.0",
+    "@commitlint/cli": "^12.0.0",
+    "lint-staged": "^10.5.4"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix",
+      "jest --bail --findRelatedTests"
+    ]
   }
 }
