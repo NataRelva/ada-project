@@ -5,7 +5,12 @@
       "outputs": ["dist/**"]
     },
     "lint": {
-      "outputs": []
+      "outputs": [
+        "packages/**/src/**/*.ts",
+        "packages/**/src/**/*.tsx",
+        "packages/**/src/**/*.js",
+        "packages/**/src/**/*.jsx"
+      ]
     },
     "test": {
       "dependsOn": ["^build"],
